@@ -27,6 +27,9 @@ jobs:
       - name: Run API Tests
         run: mvn test
 
+      - name: Rerun Failed Tests
+        run: mvn test -Dcucumber.features=@target/failed-scenarios.txt
+
       - name: Upload Test Report
         uses: actions/upload-artifact@v4
         with:

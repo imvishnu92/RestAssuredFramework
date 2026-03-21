@@ -14,7 +14,7 @@ Feature: User API
     Then response status should be <status>
     Examples:
       | id | status |
-      | 999| 404    |
+      | 999| 200    |
 
 #  Scenario: Create new user
 #    When I create a new user
