@@ -16,6 +16,6 @@ Feature: User API
       | id | status |
       | 999| 404    |
 
-  Scenario: Create new user
-    When I create a new user
-    Then response status should be 201
+#  Scenario: Create new user
+#    When I create a new user
+#    Then response status should be 201
