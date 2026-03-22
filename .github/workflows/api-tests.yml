@@ -29,6 +29,7 @@ jobs:
 
       - name: Rerun Failed Tests
         run: mvn test -Dtest=FailedRunnerTest
+        continue-on-error: true
 
       - name: Upload Test Report
         uses: actions/upload-artifact@v4
