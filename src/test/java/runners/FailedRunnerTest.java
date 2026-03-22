@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
         glue = "stepDefinitions",
         plugin = {
                 "pretty",
-                "html:target/rerun-report"
+                "json:target/cucumber-reports/rerun.json"
         }
 )
 public class FailedRunnerTest extends AbstractTestNGCucumberTests {
